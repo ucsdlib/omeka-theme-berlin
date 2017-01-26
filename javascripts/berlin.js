@@ -2,7 +2,7 @@ if (!Berlin) {
     var Berlin = {};
 }
 
-(function ($) {    
+(function ($) {
     Berlin.dropDown = function(){
         var dropdownMenu = $('#mobile-nav');
         dropdownMenu.prepend('<a href="#" class="menu">Menu</a>');
