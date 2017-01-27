@@ -1,11 +1,12 @@
 <?php echo head(array('title' => metadata('item', array('Dublin Core', 'Title')),'bodyclass' => 'items show')); ?>
 <div id="primary">
-    <h1><?php echo metadata('item', array('Dublin Core','Title')); ?></h1>
 
     <ul class="item-pagination navigation">
         <li id="previous-item" class="previous"><?php echo link_to_previous_item_show(); ?></li>
         <li id="next-item" class="next"><?php echo link_to_next_item_show(); ?></li>
     </ul>
+
+    <h1><?php echo metadata('item', array('Dublin Core','Title')); ?></h1>
 
     <h3><?php echo __('Files'); ?></h3>
     <div id="item-images">
@@ -16,7 +17,6 @@
     <div id="item-metadata">
         <?php echo all_element_texts('item'); ?>
     </div>
-
 
    <?php if(metadata('item','Collection Name')): ?>
       <div id="collection" class="element">
